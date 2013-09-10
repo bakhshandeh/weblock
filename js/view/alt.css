@@ -1,0 +1,91 @@
+.viewer {
+	background:white;
+	background-color:rgba(255,255,255,0.9);
+
+}
+.viewer .caption {
+	color:#ba6d3a;
+	font-size:1.2em;
+	height: 3.8em;
+	line-height: 3.8em
+}
+.viewer li>div {
+	left:50px;
+	top:50px;
+	bottom:50px;
+	right:50px
+}
+.viewer li.loading>div {
+	background:url(../../images/loading.gif) center center no-repeat
+}
+
+.viewer li.loading.previous,.viewer li.loading.next {
+	background:0
+}
+.viewer img {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:0 5px 20px rgba(0,0,0,0.5);
+	-moz-box-shadow:0 5px 20px rgba(0,0,0,0.5);
+	box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+.close {
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	background:url(http://stevevorass.com/js/images/close.png) no-repeat center center;
+	-webkit-border-radius: 5px;
+	der-radius: 5px;
+	height:40px;
+	width:40px;
+	display:inline-block;
+	opacity:1;
+}
+
+a:hover.close {
+	background-color:#FFEA71;
+	opacity:1;
+}
+
+.viewer li.next > div {
+	left: 20%!important;
+	right: 20%!important;
+}
+
+.viewer li.previous > div {
+	right: 20%!important;
+	left: 20%!important;
+}
+
+.viewer li.previous, .viewer li.next {
+	background: rgba(255, 255, 255, 0.06);
+}
+
+.ie8 .viewer li.previous, .viewer li.next {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#0FFFFFFF,endColorstr=#0FFFFFFF);
+}
+
+/*Transitions*/
+.viewer li {
+	-webkit-transition: width 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+	-moz-transition: width 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+	-o-transition: width 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+	transition: width 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+.viewer .caption{
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 1.5s ease-in-out;
+	-moz-transition: opacity 1.5s ease-in-out;
+	-o-transition: opacity 1.5s ease-in-out;
+	transition: opacity 1.5s ease-in-out;
+}
+.viewer .current .caption{
+	opacity: 100;
+	visibility: visible;
+}
+
