@@ -71,8 +71,7 @@ $(function() {
 		    //prepend after images are loaded
 		    $container.imagesLoaded( function(){
 			//[Prepend block]
-			$container.prepend( $newdiv)
-			.isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
+			$container.prepend( $newdiv).isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
 			//[Prepend block]
 		    /*===Hovers Fix===*/ 
                     $('.proj-img').has('.ef-proj-more').hover(function() {
