@@ -68,26 +68,13 @@ $(function() {
 		    //$('#ef-portfolio').isotope('reLayout');
 		    var $container = $('#ef-portfolio');
                     var $newdiv = $("<div class='ef-col1-4 ef-item'> <div class='proj-img clickable'> <img src=uploads/" + filename + " alt=''> <div class='proj-description'> <h4> <a href='#'>" + title.val() + "</a> </h4> <p>" + context.val() + "</p> <div class='ef-proj-links'> <div class='alignright'> <a class='ef-proj-more'> </a> </div> </div> </div> </div> </div> ");
-                    $container.imagesLoaded( function(){
+		    //prepend after images are loaded
+		    $container.imagesLoaded( function(){
+			//[Prepend block]
 			$container.prepend( $newdiv)
 			.isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
-		    });
-		    /*
-		    $('#addBlock').click(function(){
-			    $container.isotope('insert',$newdiv);
-			    return false;
-			  });
-		    */
-		   /* var $container = $('#ef-portfolio');
-		    $container.isotope('reLayout');*/
-		    
-		    
-                    //$('#ef-portfolio').isotope('insert', $newdiv);
-                    //$('#ef-portfolio').isotope('layout', $newdiv);
-                    uploaded = 0;
-                    
-
-                    /*Hovers*/ 
+			//[Prepend block]
+		    /*===Hovers Fix===*/ 
                     $('.proj-img').has('.ef-proj-more').hover(function() {
 
                         $(this).find('.proj-description').stop().animate({
@@ -113,6 +100,24 @@ $(function() {
                         }, 200);
 
                     });
+		    /*===Hovers Fix===*/ 
+		    });
+		    /*
+		    $('#addBlock').click(function(){
+			    $container.isotope('insert',$newdiv);
+			    return false;
+			  });
+		    */
+		   /* var $container = $('#ef-portfolio');
+		    $container.isotope('reLayout');*/
+		    
+		    
+                    //$('#ef-portfolio').isotope('insert', $newdiv);
+                    //$('#ef-portfolio').isotope('layout', $newdiv);
+                    uploaded = 0;
+                    
+
+                   
 
                     $(this).dialog("close");
                 }
