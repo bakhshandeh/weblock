@@ -3,11 +3,11 @@ $(function(){
     
   
 var $container = $('#ef-portfolio');
-//var itemWdt = $container.width() / 4;
+var itemWdt = $container.width() / 4;
 $container.imagesLoaded( function(){
     $container.isotope({
       itemSelector : '.ef-item',
-      //masonry: { columnWidth: itemWdt }
+      masonry: { columnWidth: itemWdt }
     });
   });
 });
