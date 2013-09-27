@@ -1,4 +1,5 @@
-
+<html lang="en">
+<head>
 <title>steve vorass | designer developer</title>	
 	
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -9,10 +10,30 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="css/additional-fluid.css">
 	
        
+
+	<link rel="stylesheet" type="text/css" href="uploadifive/uploadifive.css">
+	<link rel="stylesheet" href="js/themes/base/jquery.ui.all.css"> 
+       
   
   
-	<script type="text/javascript" src="js/jquery-1.7.1.min.js">
-	</script><script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js">
+	<script type="text/javascript" src="js/jquery-1.7.2.js">
+	</script><!--<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js">
+	</script>--><script type="text/javascript" src="uploadifive/jquery.uploadifive.js"></script>
+	<script src="js/ui/jquery-ui.js"></script>
+	
+	
+	
+	
+	<script src="js/ui/jquery.ui.core.js"></script>
+	<script src="js/ui/jquery.ui.widget.js"></script>
+	<script src="js/ui/jquery.ui.mouse.js"></script>
+	<script src="js/ui/jquery.ui.button.js"></script>
+	<script src="js/ui/jquery.ui.draggable.js"></script>
+	<script src="js/ui/jquery.ui.position.js"></script>
+	<script src="js/ui/jquery.ui.resizable.js"></script>
+	<script src="js/ui/jquery.ui.button.js"></script>
+	<script src="js/ui/jquery.ui.dialog.js"></script>
+	<script src="js/ui/jquery.ui.effect.js"></script>
 	
 	</script><script type="text/javascript" src="js/jquery.mobilemenu.js">
 	</script><script type="text/javascript" src="js/superfish/superfish.js">
@@ -22,22 +43,35 @@
 	
 	</script><script type="text/javascript" src="js/flexslider/jquery.flexslider.js">
 	</script><script type="text/javascript" src="js/column-height.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
-        
+	<script type="text/javascript" src="js/custom2.js"></script>
+
+	<script type="text/javascript" src="js/mine.js"></script>
+
        
    <!---->
    
-       
-        
-        
-<body>
-
+</head>
+   
 
             
 <body>
 
 <!-- header -->
-
+<div id="dialog-form" title="Add new block" >
+	<p class="validateTips" >All fields are required.</p>
+	
+	<form id="formAdd">
+	<fieldset>
+		<input type="file" name="file_upload" id="file_upload" />
+		<!--<label for="file_upload">Picture</label>-->
+		 <br>
+		<label for="title">Title</label>
+		<input type="text" name="title" id="title" value="" class="text ui-widget-content ui-corner-all" />
+		<label for="context">Subtitle</label>
+		<input type="text" name="context" id="context" value="" class="text ui-widget-content ui-corner-all" />
+	</fieldset>
+	</form>
+</div>
 <div id="ef-header">
 	<div class="ef-head-top">
 		
@@ -94,14 +128,21 @@
                 
                 
                 <!-- Add Block Button-->
-                <div class="ef-col1-4 ef-item">
-                    <div class="proj-img clickable">
-        		
-	        		<img src="images/add.ico" alt="">
-                    </div>
+                <div class="ef-col1-4 ef-item" id="addBlock">
+			<div class="proj-img">
+				<img src="images/add_green.png" alt="">
 
-	        		
-        	</div>
+				<div class="proj-description">
+				  <h4><a >Add a new Block</a></h4>
+
+					<div class="ef-proj-links">
+						<div class="alignright">
+							<a class="ef-proj-more"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
                 
 
 
@@ -115,3 +156,5 @@
 
 	</div>
 </div>
+</body>
+</html>
