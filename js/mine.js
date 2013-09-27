@@ -68,7 +68,10 @@ $(function() {
 		    //$('#ef-portfolio').isotope('reLayout');
 		    var $container = $('#ef-portfolio');
                     var $newdiv = $("<div class='ef-col1-4 ef-item'> <div class='proj-img clickable'> <img src=uploads/" + filename + " alt=''> <div class='proj-description'> <h4> <a href='#'>" + title.val() + "</a> </h4> <p>" + context.val() + "</p> <div class='ef-proj-links'> <div class='alignright'> <a class='ef-proj-more'> </a> </div> </div> </div> </div> </div> ");
-                    $container.isotope('insert',$newdiv);
+                    $container.imagesLoaded( function(){
+			$container.prepend( $newdiv)
+			.isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
+		    });
 		    /*
 		    $('#addBlock').click(function(){
 			    $container.isotope('insert',$newdiv);
