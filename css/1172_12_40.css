@@ -31,10 +31,10 @@ Created by Fireform
 .ef-gu11 .ef-row {width: 1111px;}
 .ef-gu12 .ef-row {width: 1212px;}
 
-.ef-col {padding-left:40px; float:right; position:relative;}
+.ef-col {padding-left:40px; float:left; position:relative;}
 .ef-gu1{width: 61px;}
 .ef-gu2{width: 162px;}
-.ef-gu3{width: 81px;/*width: 263px;*/}
+.ef-gu3{width: 263px;}
 .ef-gu4{width: 364px;}
 .ef-gu5{width: 465px;}
 .ef-gu6{width: 566px;}
@@ -66,10 +66,10 @@ Created by Fireform
 	.ef-gu11 .ef-row {width: 913px;}
 	.ef-gu12 .ef-row {width: 996px;}
 	
-	.ef-col {padding-left:30px; float:right; position:relative;}
+	.ef-col {padding-left:30px; float:left; position:relative;}
 	.ef-gu1{width: 53px;}
 	.ef-gu2{width: 136px;}
-	.ef-gu3{width: 81px;/*width: 219px;*/}
+	.ef-gu3{width: 219px;}
 	.ef-gu4{width: 302px;}
 	.ef-gu5{width: 385px;}
 	.ef-gu6{width: 468px;}
@@ -106,7 +106,7 @@ Created by Fireform
 	.ef-col {padding-left:20px; float:left; position:relative;}
 	.ef-gu1{width: 40px;}
 	.ef-gu2{width: 100px;}
-	.ef-gu3{width: 81px;/*width: 160px;*/}
+	.ef-gu3{width: 160px;}
 	.ef-gu4{width: 220px;}
 	.ef-gu5{width: 280px;}
 	.ef-gu6{width: 340px;}
