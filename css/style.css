@@ -338,7 +338,7 @@ p {
 
 .ef-col1-4 {
 	width: 293px;
-	float: left;
+	float: left; 
 }
 
 .ef-width2 {
@@ -679,7 +679,7 @@ a:hover.next, a:hover.previous , a:hover.close {
 
 
 .sf-menu li {    
-    float: right; /* left -> right */
+    float: left;
     position: relative;
 }
 
@@ -750,7 +750,7 @@ a:hover.next, a:hover.previous , a:hover.close {
 .sf-menu li a {
     font-size: 1em;
     padding: 0.4em 0.8em;
-    letter-spacing: 0.1em; /* 0.2em -> 0.1em */
+    letter-spacing: 0.2em;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;    
@@ -762,11 +762,11 @@ a:hover.next, a:hover.previous , a:hover.close {
 
 .sf-menu li {
 	line-height: 1em;
-	margin-right: 0.9em; /* -> right */
+	margin-left: 0.9em;
 }
 
 .sf-menu li:first-child,.sf-menu li li {
-	margin-right: 0.9; /* left -> right */
+	margin-left: 0;
 }
 
 .sf-menu li li a {	
@@ -1262,7 +1262,6 @@ a .sf-sub-indicator {
     right: 0;
     top: 0;
     bottom: 0;
-	text-align: right; /* added */
     -moz-opacity: 0;
     -webkit-opacity: 0;
     opacity: 0;
