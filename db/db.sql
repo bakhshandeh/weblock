@@ -10,12 +10,14 @@ create table users_data(
     value		text
 );
 
-create table user_boxes(
-    box_id		int auto_increment primary key,
-    box_user_id		int references users,
-    box_img_url		text,
-    box_text		text,
-    box_title		text
+create table blocks(
+    block_id		int auto_increment primary key,
+    block_owner_id		int references users,
+    --block_type          text, could be useful for defferent kind of blocks , like slide show,payment,ordinary and etc.
+    block_img_url	text,
+    block_title		text,
+    block_subtitle	text,
+    block_link          text
     
 );
 
